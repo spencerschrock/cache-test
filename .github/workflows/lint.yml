@@ -14,7 +14,7 @@ permissions:
 jobs:
   golangci:
     permissions:
-      actions: write
+      actions: read
     name: check-linter
     runs-on: ubuntu-latest
     steps:
