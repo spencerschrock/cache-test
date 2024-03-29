@@ -8,13 +8,12 @@ on:
       - main
 
 permissions:
+  actions: read
   contents: read
   pull-requests: read # Use with `only-new-issues` option.
 
 jobs:
   golangci:
-    permissions:
-      actions: read
     name: check-linter
     runs-on: ubuntu-latest
     steps:
